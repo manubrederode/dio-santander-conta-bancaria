@@ -1,5 +1,7 @@
 ## DIO - Trilha Java Básico
 
+Simulando Uma Conta Bancária Através Do Terminal/Console.
+
 ## Desafio 
 
 1. Crie o projeto ContaBanco que receberá dados via terminal contendo as características de conta em banco.
