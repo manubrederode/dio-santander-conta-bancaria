@@ -18,8 +18,12 @@ public class ContaTerminal {
         System.out.println("Por favor, digite o nome do cliente: ");
         String nomeCliente = scanner.next();
 
-        System.out.println("Por favor, digite o saldo: ");
-        double saldo = scanner.nextDouble();
+        try {
+            System.out.println("Por favor, digite o saldo: ");
+            double saldo = scanner.nextDouble();
+        } catch (InputMismatchException e){
+            System.out.println("O valor do saldo precisa ser numérico.");
+        }
 
         System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numeroConta + " e seu saldo " + saldo + " já está disponível para saque.");
     }
